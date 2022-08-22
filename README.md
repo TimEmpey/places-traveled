@@ -58,4 +58,13 @@ Code:
 Expected Outcome:
   Place {placeName: 'Paris', landmarkSeen: 'Eiffel Tower', timeVisited: 'september 12', id:'1'}
 
-  
+
+Describe: Traveled.prototype.deletePlace();
+Code:
+  let place1 = new Place("Paris", "Eiffel Tower", "September 12")
+  let traveled = new Traveled()
+  traveled.addPlace(place)
+  traveled.deletePlace(1)
+  traveled.places
+Expected Output: 
+  {}

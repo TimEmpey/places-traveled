@@ -20,9 +20,16 @@ Traveled.prototype.findPlace = function(id) {
   return false;
 }
 
+Traveled.prototype.deletePlace = function(id) {
+  if (this.places[id] === undefined) {
+    return false;
+  }
+  delete this.places[id];
+  return true;
+}
+
 function Place(placeName, landmarkSeen, timeVisited) {
   this.placeName = placeName;
   this.landmarkSeen = landmarkSeen;
   this.timeVisited = timeVisited;
 }
-
